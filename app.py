@@ -23,6 +23,9 @@ app = Flask(__name__)
 host = 'http://localhost:5000/'
 
 def shorten_url(url):
+    '''
+    Yaha Algorithm lag raha hai, kisi ko btana mat
+    '''
     salt = "swaad anusaar"
 
     url = url.decode('utf-8')
@@ -35,6 +38,9 @@ def shorten_url(url):
     return(final_id)
 
 def add_to_db(url):
+    '''
+    Yaha Database me entry hogi
+    '''
 
     original_url = url
     shortened_url = shorten_url(original_url)
