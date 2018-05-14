@@ -8,9 +8,7 @@
          <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                <div class="navbar-header">
-                  <a class="navbar-brand" href="#">URL Shortener for Dummies</a>
-               </div>
-               <div id="navbar" class="navbar-collapse collapse">
+                  <a class="navbar-brand" href="#">Nikka-ja URL Shortener</a>
                </div>
                <!--/.navbar-collapse -->
             </div>
@@ -21,26 +19,39 @@
                <br />
                {% if not short_url %}
                <div class="row">
-                  <div class="col-md-offset-5 col-md-3">
-                     <h4>Enter URL to shorten.</h4>
-                     <form method="post" class="navbar-form navbar-right" action="">
-                        <div class="form-group">
-                           <input type="text" id="url" name="url" class="form-control input-lg chat-input" placeholder="URL" />
-                           <button type="submit" class="btn btn-lg btn-info">Submit</button>
+                  <div class=" col-md-12">
+                        <div>
+                              <form method="post"  action="">
+                                    <div class="form-group">
+                                          <div>
+                                                <h2>Aithhe lamba url Enter Karo </h2>
+                                          </div>
+                                          
+                                          <input type="text" id="url" name="url" class="form-control input-lg " placeholder="URL" />
+                                          <button type="submit" class="btn btn-lg btn-info">Submit</button>
+                                    </div>
+                              </form>
                         </div>
-                     </form>
                   </div>
                </div>
                {% else %}
-               <div>
-                  Enjoy, your shortened URL is: <a href="{{short_url}}"> https://nikka-ja.herokuapp.com/{{short_url}}</a>
-               </div>
+            <div class="col-md-12">
+                  <center>
+                        <h3>
+                              Aye lo twada nikka-ja url :
+                              <a href="{{short_url}}"> https://nikka-ja.herokuapp.com/{{short_url}}</a>
+                        </h3>
+                         
+                  </center>
+            </div>
                {% endif %}
             </div>
          </div>
-         <footer>
-            <p>&copy; Gur Raunaq Singh 2018</p>
-         </footer>
+            <div class="col-md-12">
+                  <center>
+                        &copy; Raunaq Singh Ji (Pulbangash Waale), 2018
+                  </center>
+            </div>
          </div> 
       </body>
    </html>
