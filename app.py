@@ -76,11 +76,8 @@ def home():
             url = 'http://' + original_url
         else:
             url = original_url
-            print(url)
-            print(type(url))
-            # return("GG")
             encoded_string = add_to_db(url)
-        return render_template('home.html', short_url=host + encoded_string)
+        return render_template('home.html', short_url= encoded_string)
     return render_template('home.html')
 
 
