@@ -91,7 +91,7 @@ def home():
 def redirect_short_url(short_url):
     if(short_url is not ""):
         decoded = short_url
-    url = host  # fallback if no URL is found
+    url = '/'  # fallback if no URL is found
     with sqlite3.connect('urls.db') as conn:
         cursor = conn.cursor()
         res = cursor.execute('SELECT URL FROM WEB_URL WHERE ID=?', [decoded])
