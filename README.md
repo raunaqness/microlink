@@ -1,4 +1,4 @@
-# Nikka-ja (Punjabi for Something Small or Tiny)
+# Microlink
 
 A simple url-shortner made with Python.
 
