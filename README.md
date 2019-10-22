@@ -1,6 +1,6 @@
 # Microlink
 
-A simple url-shortner made with Python.
+A simple url-shortner made with 🐍
 
 Try it out at [http://nikka-ja.herokuapp.com/](http://nikka-ja.herokuapp.com/)
 
