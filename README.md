@@ -1,6 +1,6 @@
 # Microlink
 
-A simple url-shortner made with 🐍
+A simple url-shortner made with 🐍 and lag 🙂
 
 Try it out at [http://nikka-ja.herokuapp.com/](http://nikka-ja.herokuapp.com/)
 
